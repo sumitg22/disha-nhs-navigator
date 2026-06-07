@@ -52,7 +52,7 @@ def load_rag_pipeline():
     llm = ChatGroq(
         model="llama-3.1-8b-instant",
         temperature=0,
-        api_key=os.environ.get("GROQ_API_KEY")
+        api_key=st.secrets["GROQ_API_KEY"]
     )
 
     # Create prompt
